@@ -4,7 +4,7 @@ import type { SiteConfig } from "../types/config";
 const SITE_LANG = "zh_CN"; // 语言代码，例如：'en', 'zh_CN', 'ja' 等。
 
 export const siteConfig: SiteConfig = {
-	title: "ret2Byte",
+	title: "Byte",
 	subtitle: "My Blog",
 	siteURL: "https://ret2byte.github.io/", // 请替换为你的站点URL，以斜杠结尾
 	siteStartDate: "2026-08-10", // 站点开始运行日期，用于站点统计组件计算运行天数
@@ -35,7 +35,7 @@ export const siteConfig: SiteConfig = {
 		// 显示模式："text-icon" 显示图标+文本，"logo" 仅显示Logo
 		mode: "text-icon",
 		// 顶栏标题文本
-		text: "ret2Byte",
+		text: "Byte",
 		// 顶栏标题图标路径，默认使用 public/assets/home/home.webp
 		icon: "assets/home/home.webp",
 		// 网站Logo图片路径
@@ -162,13 +162,13 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true,
-			title: "ret2Byte",
+			title: "Byte",
 			switchable: true,
 
 			subtitle: [
 				"Security, code, and notes.",
 				"把踩过的坑写成路标。",
-				"Welcome to ret2Byte.github.io",
+				"Welcome to Byte's blog.",
 			],
 			typewriter: {
 				enable: true, // 启用副标题打字机效果

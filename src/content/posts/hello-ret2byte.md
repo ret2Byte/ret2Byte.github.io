@@ -1,7 +1,7 @@
 ---
-title: "Hello, ret2Byte"
+title: "Hello, Byte"
 published: 2026-08-10
-description: "ret2Byte 博客迁移到 Mizuki 模板后的第一篇记录。"
+description: "Byte 博客迁移到 Mizuki 模板后的第一篇记录。"
 tags: ["Blog", "Mizuki"]
 category: Notes
 pinned: true

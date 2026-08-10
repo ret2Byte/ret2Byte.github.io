@@ -1,6 +1,6 @@
-# 关于 ret2Byte
+# 关于 Byte
 
-这里是 ret2Byte 的个人博客，用来记录安全研究、代码实践、工具折腾和一些值得留下的技术笔记。
+这里是 Byte 的个人博客，用来记录安全研究、代码实践、工具折腾和一些值得留下的技术笔记。
 
 ::github{repo="ret2Byte/ret2Byte.github.io"}
 
