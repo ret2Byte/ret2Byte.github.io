@@ -10,6 +10,21 @@ export const pioConfig: PioConfig = {
 	mode: "draggable", // 默认为可拖拽模式
 	hiddenOnMobile: true, // 默认在移动设备上隐藏
 	hideAboutMenu: false, // 隐藏内置 About 菜单按钮
+	menus: {
+		extraItems: [
+			{
+				icon: "mdi:home",
+				label: "主页",
+				action: "home",
+			},
+			{
+				icon: "mdi:account-group",
+				label: "友链",
+				action: "friends",
+			},
+		],
+		align: "right",
+	},
 	dialog: {
 		welcome: "Welcome to Byte's blog!", // 欢迎词
 		touch: [

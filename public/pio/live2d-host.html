@@ -21,9 +21,21 @@
 
   var menuActions = {
     home: function() { parent.postMessage({ type: 'l2d-action', action: 'home' }, '*'); },
+    friends: function() { parent.postMessage({ type: 'l2d-action', action: 'friends' }, '*'); },
     scrollToTop: function() { parent.postMessage({ type: 'l2d-action', action: 'scrollToTop' }, '*'); },
     sleep: function(w) { w.sleep(); },
   };
+
+  function bindMenuActions(items) {
+    if (!Array.isArray(items)) return items;
+    return items.map(function(item) {
+      return {
+        icon: item.icon,
+        label: item.label,
+        onClick: menuActions[item.action] || function() {}
+      };
+    });
+  }
 
   function notifyLoaded() {
     parent.postMessage({ type: 'l2d-loaded', contentHeight: lastContentHeight }, '*');
@@ -120,14 +132,9 @@
       destroyWidget();
     }
 
-    if (config.menus && config.menus.items) {
-      config.menus.items = config.menus.items.map(function(item) {
-        return {
-          icon: item.icon,
-          label: item.label,
-          onClick: menuActions[item.action] || function() {}
-        };
-      });
+    if (config.menus) {
+      config.menus.items = bindMenuActions(config.menus.items);
+      config.menus.extraItems = bindMenuActions(config.menus.extraItems);
     }
 
     try {

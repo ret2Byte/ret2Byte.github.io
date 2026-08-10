@@ -36,13 +36,30 @@ const widgetConfig: Record<string, unknown> = {
 	_hideAbout: config.hideAboutMenu ?? true,
 };
 
-if (config.menus?.items && config.menus.items.length > 0) {
+const mapMenuItem = ({
+	icon,
+	label,
+	action,
+}: {
+	icon?: string;
+	label: string;
+	action: string;
+}) => ({
+	icon,
+	label,
+	action,
+});
+
+const menuItems = config.menus?.items?.map(mapMenuItem);
+const extraMenuItems = config.menus?.extraItems?.map(mapMenuItem);
+
+if (
+	(menuItems && menuItems.length > 0) ||
+	(extraMenuItems && extraMenuItems.length > 0)
+) {
 	widgetConfig.menus = {
-		items: config.menus.items.map(({ icon, label, action }) => ({
-			icon,
-			label,
-			action,
-		})),
+		...(menuItems && { items: menuItems }),
+		...(extraMenuItems && { extraItems: extraMenuItems }),
 		...(config.menus.align && { align: config.menus.align }),
 	};
 }
@@ -104,8 +121,17 @@ const isRight = config.position === "right";
 		const hiddenOnMobile = configSource.dataset.hiddenOnMobile === "true";
 
 		if (!win.__mizukiPioController) {
+			function navigateTo(path: string) {
+				if (window.swup) {
+					window.swup.navigate(path);
+				} else {
+					window.location.href = path;
+				}
+			}
+
 			const menuActions: Record<string, () => void> = {
-				home: () => (window.location.href = "/"),
+				home: () => navigateTo("/"),
+				friends: () => navigateTo("/friends/"),
 				scrollToTop: () => window.scrollTo({ top: 0, behavior: "smooth" }),
 			};
 

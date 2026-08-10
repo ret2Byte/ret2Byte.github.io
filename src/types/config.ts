@@ -536,6 +536,11 @@ export interface PioConfig {
 			label: string; // 无障碍标题
 			action: string; // 预定义动作名称
 		}[];
+		extraItems?: {
+			icon?: string; // Iconify 图标名称
+			label: string; // 无障碍标题
+			action: string; // 预定义动作名称
+		}[];
 		align?: "left" | "right"; // 菜单对齐方式
 	};
 }
