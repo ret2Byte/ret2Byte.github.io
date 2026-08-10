@@ -15,7 +15,7 @@ export const friendsData: FriendItem[] = [
 	{
 		id: 1,
 		title: "无机盐",
-		imgurl: "https://github.com/bajiu9.png",
+		imgurl: "/assets/friends/wujiyan.png",
 		desc: "无机盐大手子",
 		siteurl: "https://bajiu9.github.io/gggit/",
 		tags: ["Blog"],
