@@ -15,5 +15,15 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa7-brands:github",
 			url: "https://github.com/ret2Byte",
 		},
+		{
+			name: "推特",
+			icon: "fa7-brands:x-twitter",
+			url: "https://x.com/0xByteOfficial",
+		},
+		{
+			name: "哔哩哔哩",
+			icon: "fa7-brands:bilibili",
+			url: "https://space.bilibili.com/419131265?spm_id_from=333.1007.0.0",
+		},
 	],
 };
