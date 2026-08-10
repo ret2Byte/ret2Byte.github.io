@@ -20,6 +20,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://bajiu9.github.io/gggit/",
 		tags: ["Blog"],
 	},
+	{
+		id: 2,
+		title: "Converter258",
+		imgurl: "/assets/friends/converter258.jpg",
+		desc: "王神，pwn大手子",
+		siteurl: "https://www.converter258.cn",
+		tags: ["Blog"],
+	},
 ];
 
 // 获取所有友情链接数据
