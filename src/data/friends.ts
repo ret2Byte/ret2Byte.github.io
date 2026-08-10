@@ -28,6 +28,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://www.converter258.cn",
 		tags: ["Blog"],
 	},
+	{
+		id: 3,
+		title: "玉米",
+		imgurl: "/assets/friends/p0pc03n.png",
+		desc: "🌽",
+		siteurl: "https://p0pc03n.cn/",
+		tags: ["Blog"],
+	},
 ];
 
 // 获取所有友情链接数据
