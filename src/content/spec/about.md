@@ -4,9 +4,14 @@
 
 ::github{repo="ret2Byte/ret2Byte.github.io"}
 
+## whoami
+一名平平无奇的CTF小菜鸡，主要研究二进制安全
+
+> 学习安卓ing
+
 ## 内容方向
 
-- CTF、二进制安全、Web 安全与逆向分析
+- CTF、二进制安全、Android安全、ai安全与逆向工程
 - 编程实践、工程记录与环境搭建
 - 日常遇到的问题、复盘和解决方案
 
