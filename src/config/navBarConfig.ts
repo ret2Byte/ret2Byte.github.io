@@ -131,6 +131,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
+		LinkPreset.Friends,
 		{
 			name: "GitHub",
 			url: "https://github.com/ret2Byte",
