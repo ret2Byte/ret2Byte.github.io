@@ -36,6 +36,14 @@ export const friendsData: FriendItem[] = [
 		siteurl: "https://p0pc03n.cn/",
 		tags: ["Blog"],
 	},
+	{
+		id: 4,
+		title: "Fa1lSnow",
+		imgurl: "/assets/friends/fa1lsnow.png",
+		desc: "落雪大手子",
+		siteurl: "https://blog.fa1lsnow.com/",
+		tags: ["Blog"],
+	},
 ];
 
 // 获取所有友情链接数据
